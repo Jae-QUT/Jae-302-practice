@@ -12,6 +12,10 @@ target/
 *.iml
 *.ipr
 
+### Ignore generated Javadoc ###
+/docs/javadoc/
+
+
 ### Eclipse ###
 .apt_generated
 .classpath

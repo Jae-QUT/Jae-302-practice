@@ -3,6 +3,9 @@ package com.example.addressbook.model;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class for managing contact objects
+ */
 public class MockContactDAO implements IContactDAO {
     /**
      * A static list of contacts to be used as a mock database.
@@ -10,6 +13,11 @@ public class MockContactDAO implements IContactDAO {
     public final ArrayList<Contact> contacts = new ArrayList<>();
     private int autoIncrementedId = 0;
 
+
+    /**
+     * Method to add contact to DB
+     * @param contact The contact to add.
+     */
     @Override
     public void addContact(Contact contact) {
         contact.setId(autoIncrementedId);
